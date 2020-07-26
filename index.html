@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="vendor/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>My Website</title>
+  </head>
+  <body>
+    <div id="search-over">
+      <span class="closebtn" onclick="closeSearch()" title="Close Search"
+        >×</span
+      >
+      <div class="content">
+        <form>
+          <input type="text" placeholder="Search..." name="search" />
+        </form>
+      </div>
+    </div>
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#"><img src="vendor/img/logo.png" alt="" /></a>
+          </div>
+          <div class="nav-list">
+            <div class="nn"><div class="bar"></div></div>
+            <ul>
+              <li><a href="#content" data-after="Home">Home</a></li>
+              <li><a href="#child" data-after="Service">Trẻ em</a></li>
+              <li><a href="#story" data-after="story">Câu chuyện</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#footer" data-after="Contact">Contact</a></li>
+              <li>
+                <a id="search" onclick="openSearch()"
+                  ><span><i class="fa fa-search" aria-hidden="true"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="content container">
+        <div class="fix-content">
+          <h1>Chia sẻ từ tâm <span></span></h1>
+          <h1>lan tỏa<span></span></h1>
+          <h1>yêu thương <span></span></h1>
+        </div>
+        <div>
+          <a href="#" type="button" class="cta">Chung tay</a>
+        </div>
+      </div>
+    </section>
+    <section id="slider">
+      <div class="swiper-container" id="swiper-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/logo.png" />
+            </div>
+          </div>
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/Preschool_12_930x525-768x434.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/kid-e1550642281222-o3s7xvewm36g5nancjwvoeza5vj44gcbwhy23swt54-768x400.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/D25_172_336_1200-768x512.jpg" />
+            </div>
+          </div>
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/clipart681578.png" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section id="child">
+      <div class="child container">
+        <div class="child-header">
+          <h1 class="section-title"><span>Trẻ em</span></h1>
+        </div>
+        <div class="all-child">
+          <div class="child-st1">
+            <div class="child-info">
+              <img src="vendor/img/Autism-2-768x591 (1).jpg" alt="" />
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut.
+              </p>
+              <h1>Trẻ khiếm thính</h1>
+            </div>
+            <div class="child-info">
+              <img src="vendor/img/kid-e1550642281222-o3s7xvewm36g5nancjwvoeza5vj44gcbwhy23swt54-768x400.jpg" alt="" />
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut.
+              </p>
+              <h1>Trẻ tự kỹ</h1>
+            </div>
+            <div class="child-info">
+              <img src="vendor/img/images-1.jpg" alt="" />
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut.
+              </p>
+              <h1>Trẻ bị tổn thương não</h1>
+            </div>
+            <div class="child-info">
+              <img src="vendor/img/Preschool_12_930x525-768x434.jpg" alt="" />
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
+                illum quae mollitia ut.
+              </p>
+              <h1>Các trẻ em khác</h1>
+            </div>
+          </div>
+          <div class="readmore">
+            <a href=""><span>Xem thêm</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="story">
+      <div class="story container">
+        <div class="story-header">
+          <h1 class="section-title"><span>Câu chuyện</span></h1>
+        </div>
+        <div class="all-story">
+          <div class="story-item">
+            <div class="story-info">
+              <h1 style="color: blue;">
+               <span style="border-left: solid 5px;"><span style="font-size: 5px;color: blue;">_</span> TẠI SAO QUÁ TRÌNH PHÁT TRIỂN CỦA TRẺ ĐƯỢC XEM LÀ QUAN</span>  <span style="border-bottom: solid 5px;">TRỌNG?</span>
+              </h1>
+              <p>
+                Quá trình phát triển của trẻ được xem là những giai đoạn thúc
+                đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai, Quá trình
+                phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn
+                thiện các kỹ năng cơ bản trong tương lai, Quá trình phát triển
+                của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các
+                kỹ năng cơ bản trong tương lai, Quá trình phát triển của trẻ
+                được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng
+                cơ bản trong tương lai, Quá trình phát triển của trẻ được xem là
+                những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong
+                tương lai, Quá trình phát triển của trẻ được xem là những giai
+                đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai
+              </p>
+            </div>
+            <div class="story-img">
+              <img src="./vendor/img/clipart463796.png" alt="img" />
+            </div>
+          </div>
+          <div class="story-item">
+            <div class="story-info">
+              <h1 style="color: red;">
+               <span style="border-left: solid 5px;"><span style="font-size: 5px;color: blue;">_</span> TẠI SAO QUÁ TRÌNH PHÁT TRIỂN CỦA TRẺ ĐƯỢC XEM LÀ QUAN <span style="border-bottom: solid 5px;">TRỌNG?</span>
+              </h1>
+              <p>
+                Quá trình phát triển của trẻ được xem là những giai đoạn thúc
+                đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai, Quá trình
+                phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn
+                thiện các kỹ năng cơ bản trong tương lai, Quá trình phát triển
+                của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các
+                kỹ năng cơ bản trong tương lai, Quá trình phát triển của trẻ
+                được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng
+                cơ bản trong tương lai, Quá trình phát triển của trẻ được xem là
+                những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong
+                tương lai, Quá trình phát triển của trẻ được xem là những giai
+                đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai
+              </p>
+            </div>
+            <div class="story-img">
+              <img src="./vendor/img/clipart949888.png" alt="img" />
+            </div>
+          </div>
+          <div class="story-item">
+            <div class="story-info">
+              <h1 style="color: blueviolet;">
+                <span style="border-left: solid 5px;"><span style="font-size: 5px;color: blue;">_</span> TẠI SAO QUÁ TRÌNH PHÁT TRIỂN CỦA TRẺ ĐƯỢC XEM LÀ QUAN <span style="border-bottom: solid 5px;">TRỌNG?</span>
+              </h1>
+              <p>
+                Quá trình phát triển của trẻ được xem là những giai đoạn thúc
+                đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai, Quá trình
+                phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn
+                thiện các kỹ năng cơ bản trong tương lai, Quá trình phát triển
+                của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các
+                kỹ năng cơ bản trong tương lai, Quá trình phát triển của trẻ
+                được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng
+                cơ bản trong tương lai, Quá trình phát triển của trẻ được xem là
+                những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong
+                tương lai, Quá trình phát triển của trẻ được xem là những giai
+                đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai
+              </p>
+            </div>
+            <div class="story-img">
+              <img src="./vendor/img/clipart1298728.png" alt="img" />
+            </div>
+          </div>
+          <div class="story-item">
+            <div class="story-info">
+              <h1 style="color: orange;">
+                <span style="border-left: solid 5px;"><span style="font-size: 5px;color: blue;">_</span> TẠI SAO QUÁ TRÌNH PHÁT TRIỂN CỦA TRẺ ĐƯỢC XEM LÀ QUAN <span style="border-bottom: solid 5px;">TRỌNG?</span>
+              </h1>
+              <p>
+                Quá trình phát triển của trẻ được xem là những giai đoạn thúc
+                đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai, Quá trình
+                phát triển của trẻ được xem là những giai đoạn thúc đẩy và hoàn
+                thiện các kỹ năng cơ bản trong tương lai, Quá trình phát triển
+                của trẻ được xem là những giai đoạn thúc đẩy và hoàn thiện các
+                kỹ năng cơ bản trong tương lai, Quá trình phát triển của trẻ
+                được xem là những giai đoạn thúc đẩy và hoàn thiện các kỹ năng
+                cơ bản trong tương lai, Quá trình phát triển của trẻ được xem là
+                những giai đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong
+                tương lai, Quá trình phát triển của trẻ được xem là những giai
+                đoạn thúc đẩy và hoàn thiện các kỹ năng cơ bản trong tương lai
+              </p>
+            </div>
+            <div class="story-img">
+              <img src="./vendor/img/clipart473835.png" alt="img" />
+            </div>
+          </div>
+        </div>
+        <div class="readmore">
+          <a href=""><span>Xem thêm</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about container">
+        <h1 class="section-title"><span>Về chúng tôi</span></h1>
+        <div class="ab1">
+          <span>Được thành lập ......</span><br />
+          <span>Với mục đích ......</span><br />
+          <strong>Mang đến các giá trị tốt đẹp</strong>
+        </div>
+        <div class="fixed"></div>
+        <h1 class="section-title">
+          <span>Mọi người nghĩ gì về chúng tôi ?</span>
+        </h1>
+        <div class="fixed"></div>
+        <div class="main">
+          <div class="f1">
+            <img src="vendor/img/clipart4433952.png" alt="" />
+            <h1>
+              Ho tên : Nguyen Van A
+            </h1>
+            <span>
+              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+              khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
+              Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
+              bé "</span
+            >
+          </div>
+          <div class="f1">
+            <img src="vendor/img/clipart4433952.png" alt="" />
+            <h1>
+              Ho tên : Nguyen Van A
+            </h1>
+            <span>
+              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+              khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
+              Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
+              bé "</span
+            >
+          </div>
+          <div class="f1">
+            <img src="vendor/img/clipart4433952.png" alt="" />
+            <h1>
+              Ho tên : Nguyen Van A
+            </h1>
+            <span>
+              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+              khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
+              Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
+              bé "</span
+            >
+          </div>
+          <div class="f1">
+            <img src="vendor/img/clipart4433952.png" alt="" />
+            <h1>
+              Ho tên : Nguyen Van A
+            </h1>
+            <span>
+              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+              khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
+              Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
+              bé "</span
+            >
+          </div>
+          <div class="f1">
+            <img src="vendor/img/clipart4433952.png" alt="" />
+            <h1>
+              Ho tên : Nguyen Van A
+            </h1>
+            <span>
+              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+              khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
+              Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
+              bé "</span
+            >
+          </div>
+          <div class="f1">
+            <img src="vendor/img/clipart4433952.png" alt="" />
+            <h1>
+              Ho tên : Nguyen Van A
+            </h1>
+            <span>
+              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+              khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
+              Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
+              bé "</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partner">
+      <h1 class="section-title"><img src="vendor/img/clipart106780.png" alt="" /></h1>
+      <div class="swiper-container partner" id="swiper-partner" >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide sl">
+            <div class="lg">
+              <img src="vendor/img/download (1).png" />
+            </div>
+          </div>
+          <div class="swiper-slide sl">
+            <div class="lg">
+              <img src="vendor/img/download (1).png" />
+            </div>
+          </div>
+          <div class="swiper-slide sl">
+            <div class="lg">
+              <img src="vendor/img/download (1).png" />
+            </div>
+          </div>
+          <div class="swiper-slide sl">
+            <div class="lg">
+              <img src="vendor/img/download (1).png" />
+            </div>
+          </div>
+          <div class="swiper-slide sl">
+            <div class="lg">
+              <img src="vendor/img/download (1).png" />
+            </div>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="footer-left">
+        <img src="vendor/img/logo.png"/>
+        <h3>About<span>Niềm tin</span></h3>
+        <p class="footer-links">
+          <a href="#content">Home</a>
+          |
+          <a href="#about">About</a>
+          |
+          <a href="#contact">Contact</a>
+        </p>
+        <p class="footer-company-name">© 2020 Niềm tin organization</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>123 Đường 456 phường 789 quận 10</span></p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>0123.456.789</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@eduonix.com">support@niemtin.org</a></p>
+        </div>
+        <div>
+          <h1>Kết nối với chúng tôi</h1>
+          <a href="#" class="fa fa-facebook f f-fb" style="font-size:36px; "></a>
+          <a href="#" class="fa fa-twitter f f-tw"style="font-size:36px;margin-left:30px;"></a>
+          <a href="#" class="fa fa-youtube f f-yt"style="font-size:36px;margin-left:30px;"></a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div>
+          <input type="text" name="" id="" placeholder="Nhập tên của bạn" />
+          <input class="fixed" type="text" name="" id="" placeholder="Nhập email của bạn"/>
+        </div>
+        <div>
+          <textarea name="" id="" placeholder="Nhập phản hồi của bạn"
+          ></textarea>
+          <a class="a-btn" href="">Gửi phản hồi</a>
+        </div>
+      </div>
+    </section>
+    <script src="vendor/js/swiper.min.js"></script>
+    <script src="vendor/js/main.js"></script>
+  </body>
+</html>
