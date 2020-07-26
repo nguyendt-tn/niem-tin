@@ -7,6 +7,5 @@ document.addEventListener('scroll',()=>{var scroll_position = window.scrollY;if(
 menu_item.forEach((item)=>{item.addEventListener('click',()=>{nn.classList.toggle('active');mobile_menu.classList.toggle('active');});});
 function openSearch() {(document.getElementById("search-over").style.display = "block");}
 function closeSearch() {(document.getElementById("search-over").style.display = "none");}
-new Swiper('#swiper-slider',{effect: 'coverflow',grabCursor: true,centeredSlides: true,slidesPerView: 'auto',coverflowEffect: {rotate: 50,stretch: 0,depth: 500,modifier: 1,slideShadows: true},loop : true});
+new Swiper('#swiper-slider',{effect: 'coverflow',grabCursor: true,centeredSlides: true,slidesPerView: 'auto',coverflowEffect: {rotate: 50,stretch: 0,depth: 500,modifier: 1,slideShadows: true},loop : true,autoplay : {delay : 2000,disableOnInteraction: false,}});
 new Swiper('#swiper-partner', {grabCursor: true,centeredSlides: true,slidesPerView: 'auto',loop : true,autoplay : {delay : 2000,disableOnInteraction: false,}});
-// {delay : 2000,disableOnInteraction: false,}
