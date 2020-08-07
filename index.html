@@ -10,7 +10,88 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Ánh sáng niềm tin chói lọi</title>
+    <title>My Website</title>
+    <style>
+        #child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #child .child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            transform-style: preserve-3d;
+            width: 1100px;
+        }
+        #child .child .card{
+            position: relative;
+            width: 320px;
+            height: 320px;
+            margin: 20px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        #child .child .card .box{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: 1s ease;
+        }
+        #child .child .card .box .imgBx{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #child .child .card .box .imgBx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #child .child .card .box .contentBx{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #333;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            transform: rotateY(180deg);
+        }
+        #child .child .card:hover .box{
+            transform: rotateY(180deg);
+        }
+        #child .child .card .box .contentBx div{
+            transform-style: preserve-3d;
+            padding: 20px;
+            background: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+            transform: translateZ(100px);
+        }
+        #child .child .card .box .contentBx div h2{
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        #child .child .card .box .contentBx div span{
+            color: #fff;
+            font-size: 16px;
+        }
+    </style>
   </head>
   <body>
     <div id="search-over">
@@ -61,88 +142,130 @@
       </div>
     </section>
     <section id="slider">
-      <div class="slider container">
-        <div class="swiper-container" id="swiper-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide reflect">
-              <div class="imgBx">
-                <img src="vendor/img/logo.png" />
-              </div>
+      <div class="swiper-container" id="swiper-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/logo.png" />
             </div>
-            <div class="swiper-slide reflect">
-              <div class="imgBx">
-                <img src="vendor/img/Preschool_12_930x525-768x434.jpg" />
-              </div>
+          </div>
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/Preschool_12_930x525-768x434.jpg" />
             </div>
-            <div class="swiper-slide reflect">
-              <div class="imgBx">
-                <img src="vendor/img/kid-e1550642281222-o3s7xvewm36g5nancjwvoeza5vj44gcbwhy23swt54-768x400.jpg" />
-              </div>
+          </div>
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/kid-e1550642281222-o3s7xvewm36g5nancjwvoeza5vj44gcbwhy23swt54-768x400.jpg" />
             </div>
-            <div class="swiper-slide reflect">
-              <div class="imgBx">
-                <img src="vendor/img/D25_172_336_1200-768x512.jpg" />
-              </div>
+          </div>
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/D25_172_336_1200-768x512.jpg" />
             </div>
-            <div class="swiper-slide reflect">
-              <div class="imgBx">
-                <img src="vendor/img/clipart681578.png" />
-              </div>
+          </div>
+          <div class="swiper-slide reflect">
+            <div class="imgBx">
+              <img src="vendor/img/clipart681578.png" />
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
+    <h1 class="section-title" style="margin-top: 200px;margin-bottom: 100px;"><span>Trẻ em</span></h1>
     <section id="child">
-      <div class="child container">
-        <div class="child-header">
-          <h1 class="section-title"><span>Trẻ em</span></h1>
-        </div>
-        <div class="all-child">
-          <div class="child-st1">
-            <div class="child-info">
-              <img src="vendor/img/Autism-2-768x591 (1).jpg" alt="" />
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
-                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
-                illum quae mollitia ut.
-              </p>
-              <h1>Trẻ khiếm thính</h1>
-            </div>
-            <div class="child-info">
-              <img src="vendor/img/kid-e1550642281222-o3s7xvewm36g5nancjwvoeza5vj44gcbwhy23swt54-768x400.jpg" alt="" />
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
-                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
-                illum quae mollitia ut.
-              </p>
-              <h1>Trẻ tự kỹ</h1>
-            </div>
-            <div class="child-info">
-              <img src="vendor/img/images-1.jpg" alt="" />
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
-                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
-                illum quae mollitia ut.
-              </p>
-              <h1>Trẻ bị tổn thương não</h1>
-            </div>
-            <div class="child-info">
-              <img src="vendor/img/Preschool_12_930x525-768x434.jpg" alt="" />
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
-                iusto cupiditate voluptatum impedit unde rem ipsa distinctio
-                illum quae mollitia ut.
-              </p>
-              <h1>Các trẻ em khác</h1>
-            </div>
+      <div class="child">
+          <div class="card">
+              <div class="box">
+                  <div class="imgBx">
+                      <img src="vendor/img/Autism-2-768x591%20(1).jpg" alt="">
+                  </div>
+                  <div class="contentBx">
+                      <div>
+                          <h2>TRẺ KHIẾM THÍNH</h2>
+                          <p>
+                            Thực tế có 2-4 % trẻ khiếm thính có kèm theo khó khăn khác, đó là Tự kỷ.
+Nếu trẻ bị khiếm thính kết hợp với Tự kỷ (có dấu hiệu Tự Kỷ), luôn gặp khó khăn trong giao tiếp và phát triển ngôn ngữ.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="box">
+                  <div class="imgBx">
+                      <img src="vendor/img/kid-e1550642281222-o3s7xvewm36g5nancjwvoeza5vj44gcbwhy23swt54-768x400.jpg" alt="">
+                  </div>
+                  <div class="contentBx">
+                      <div>
+                          <h2>TRẺ TỰ KỶ</h2>
+                          <p>Thực tế có 2-4 % trẻ khiếm thính có kèm theo khó khăn khác, đó là Tự kỷ.
+                            Nếu trẻ bị khiếm thính kết hợp với Tự kỷ (có dấu hiệu Tự Kỷ), luôn gặp khó khăn trong giao tiếp và phát triển ngôn ngữ.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="box">
+                  <div class="imgBx">
+                      <img src="vendor/img/images-1.jpg" alt="">
+                  </div>
+                  <div class="contentBx">
+                      <div>
+                          <h2>TRẺ BỊ TỔN THƯƠNG NÃO</h2>
+                          <p>Thực tế có 2-4 % trẻ khiếm thính có kèm theo khó khăn khác, đó là Tự kỷ.
+                            Nếu trẻ bị khiếm thính kết hợp với Tự kỷ (có dấu hiệu Tự Kỷ), luôn gặp khó khăn trong giao tiếp và phát triển ngôn ngữ.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="box">
+                  <div class="imgBx">
+                      <img src="vendor/img/Preschool_12_930x525-768x434.jpg" alt="">
+                  </div>
+                  <div class="contentBx">
+                      <div>
+                          <h2>HỘI CHỨNG DOWN</h2>
+                          <p>Thực tế có 2-4 % trẻ khiếm thính có kèm theo khó khăn khác, đó là Tự kỷ.
+                            Nếu trẻ bị khiếm thính kết hợp với Tự kỷ (có dấu hiệu Tự Kỷ), luôn gặp khó khăn trong giao tiếp và phát triển ngôn ngữ.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="box">
+                  <div class="imgBx">
+                      <img src="vendor/img/images-1-1.jpg" alt="">
+                  </div>
+                  <div class="contentBx">
+                      <div>
+                          <h2>TRẺ ADHD</h2>
+                          <p>Thực tế có 2-4 % trẻ khiếm thính có kèm theo khó khăn khác, đó là Tự kỷ.
+                            Nếu trẻ bị khiếm thính kết hợp với Tự kỷ (có dấu hiệu Tự Kỷ), luôn gặp khó khăn trong giao tiếp và phát triển ngôn ngữ.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="box">
+                  <div class="imgBx">
+                      <img src="vendor/img/D25_172_336_1200-768x512.jpg" alt="">
+                  </div>
+                  <div class="contentBx">
+                      <div>
+                          <h2>CÁC TRẺ EM KHÁC</h2>
+                          <p>Thực tế có 2-4 % trẻ khiếm thính có kèm theo khó khăn khác, đó là Tự kỷ.
+                            Nếu trẻ bị khiếm thính kết hợp với Tự kỷ (có dấu hiệu Tự Kỷ), luôn gặp khó khăn trong giao tiếp và phát triển ngôn ngữ.</p>
+                      </div>
+                  </div>
+              </div>
           </div>
           <div class="readmore">
             <a href=""><span>Xem thêm</span></a>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
     <section id="story">
       <div class="story container">
         <div class="story-header">
@@ -263,81 +386,75 @@
         <div class="fixed"></div>
         <div class="main">
           <div class="f1">
-            <img src="vendor/img/clipart4433952.png" alt="" />
+            <img src="vendor/img/user1.png" alt="" />
             <h1>
               Ho tên : Nguyen Van A
             </h1>
-            <span>
-              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+            <p style="font-size: 30px;margin: 0;text-align: left;" >"</p><span>
+              Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
               khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
               Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
-              bé "</span
-            >
+              bé</span><p style="font-size: 30px;margin: 0;text-align: right;" >"
           </div>
           <div class="f1">
-            <img src="vendor/img/clipart4433952.png" alt="" />
+            <img src="vendor/img/user3.png" alt="" />
             <h1>
               Ho tên : Nguyen Van A
             </h1>
-            <span>
-              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+            <p style="font-size: 30px;margin: 0;text-align: left;" >"</p><span>
+              Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
               khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
               Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
-              bé "</span
-            >
+              bé</span><p style="font-size: 30px;margin: 0;text-align: right;" >"
           </div>
           <div class="f1">
-            <img src="vendor/img/clipart4433952.png" alt="" />
+            <img src="vendor/img/user4.png" alt="" />
             <h1>
               Ho tên : Nguyen Van A
             </h1>
-            <span>
-              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+            <p style="font-size: 30px;margin: 0;text-align: left;" >"</p><span>
+              Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
               khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
               Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
-              bé "</span
-            >
+              bé</span><p style="font-size: 30px;margin: 0;text-align: right;" >"
           </div>
           <div class="f1">
-            <img src="vendor/img/clipart4433952.png" alt="" />
+            <img src="vendor/img/user5.png" alt="" />
             <h1>
               Ho tên : Nguyen Van A
             </h1>
-            <span>
-              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+            <p style="font-size: 30px;margin: 0;text-align: left;" >"</p><span>
+              Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
               khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
               Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
-              bé "</span
-            >
+              bé</span><p style="font-size: 30px;margin: 0;text-align: right;" >"
           </div>
           <div class="f1">
-            <img src="vendor/img/clipart4433952.png" alt="" />
+            <img src="vendor/img/user6.png" alt="" />
             <h1>
               Ho tên : Nguyen Van A
             </h1>
-            <span>
-              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+            <p style="font-size: 30px;margin: 0;text-align: left;" >"</p><span>
+              Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
               khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
               Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
-              bé "</span
-            >
+              bé</span><p style="font-size: 30px;margin: 0;text-align: right;" >"
           </div>
           <div class="f1">
-            <img src="vendor/img/clipart4433952.png" alt="" />
+            <img src="vendor/img/user7.png" alt="" />
             <h1>
               Ho tên : Nguyen Van A
             </h1>
-            <span>
-              " Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
+
+            <p style="font-size: 30px;margin: 0;text-align: left;" >"</p><span>
+              Chương trình Vầng Trăng Không Khuyết của các Gia đình Siêu Nhân
               khu vực miền nam. Niềm Tin hân hạnh được tham dự chương trìnhTrung
               Thu đáng yêu nhất, đặc biệt là Ban tổ chức là các cha mẹ của các
-              bé "</span
-            >
+              bé</span><p style="font-size: 30px;margin: 0;text-align: right;" >"
           </div>
         </div>
       </div>
     </section>
-
     <section id="partner">
       <h1 class="section-title"><img src="vendor/img/clipart106780.png" alt="" /></h1>
       <div class="swiper-container partner" id="swiper-partner" >
@@ -374,7 +491,7 @@
     <section id="footer">
       <div class="footer-left">
         <img src="vendor/img/logo.png"/>
-        <h3>About<span>Niềm tin</span></h3>
+        <h3>About<span><span> </span> Niềm tin</span></h3>
         <p class="footer-links">
           <a href="#content">Home</a>
           |
@@ -395,7 +512,7 @@
         </div>
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@eduonix.com">support@niemtin.org</a></p>
+          <p><a href="">support@niemtin.org</a></p>
         </div>
         <div>
           <h1>Kết nối với chúng tôi</h1>
